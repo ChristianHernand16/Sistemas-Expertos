@@ -1,0 +1,39 @@
+CLIPS> (load "C:/Users/chris/Desktop/UNIVERSIDAD/Sistemas Expertos/ordenacion.CLP")
+Defining defrule: ini +j+j
+Defining defrule: ordenar +j+j
+Defining defrule: fin +j+j+j+j
+TRUE
+CLIPS> (watch facts)
+CLIPS> (watch rules)
+CLIPS> (reset)
+<== f-0     (initial-fact)
+==> f-0     (initial-fact)
+CLIPS> (assert (vector 3 2 1 4 7 8 5 6))
+==> f-1     (vector 3 2 1 4 7 8 5 6)
+<Fact-1>
+CLIPS> (run)
+FIRE    1 ini: f-1
+==> f-2     (vector-aux 3 2 1 4 7 8 5 6)
+FIRE    2 ordenar: f-2
+<== f-2     (vector-aux 3 2 1 4 7 8 5 6)
+==> f-3     (vector-aux 2 3 1 4 7 8 5 6)
+FIRE    3 ordenar: f-3
+<== f-3     (vector-aux 2 3 1 4 7 8 5 6)
+==> f-4     (vector-aux 2 1 3 4 7 8 5 6)
+FIRE    4 ordenar: f-4
+<== f-4     (vector-aux 2 1 3 4 7 8 5 6)
+==> f-5     (vector-aux 1 2 3 4 7 8 5 6)
+FIRE    5 ordenar: f-5
+<== f-5     (vector-aux 1 2 3 4 7 8 5 6)
+==> f-6     (vector-aux 1 2 3 4 7 5 8 6)
+FIRE    6 ordenar: f-6
+<== f-6     (vector-aux 1 2 3 4 7 5 8 6)
+==> f-7     (vector-aux 1 2 3 4 5 7 8 6)
+FIRE    7 ordenar: f-7
+<== f-7     (vector-aux 1 2 3 4 5 7 8 6)
+==> f-8     (vector-aux 1 2 3 4 5 7 6 8)
+FIRE    8 ordenar: f-8
+<== f-8     (vector-aux 1 2 3 4 5 7 6 8)
+==> f-9     (vector-aux 1 2 3 4 5 6 7 8)
+FIRE    9 fin: *,f-1,f-9
+La ordenacion de (3 2 1 4 7 8 5 6) es (1 2 3 4 5 6 7 8)
