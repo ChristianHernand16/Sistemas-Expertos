@@ -1,0 +1,8 @@
+(deffacts reglas(H)(K))
+(defrule validacion-A (A) => (assert (E)) (printout t "activado E" crlf))
+(defrule validacion-B (B) => (assert (D)) (printout t "activado D" crlf))
+(defrule validacion-H (H) => (assert (A)) (printout t "activado A" crlf))
+(defrule validacion-EG (E)(G) => (assert (C)) (printout t "activado C" crlf))
+(defrule validacion-EK (E)(K) => (assert (B)) (printout t "activado B" crlf))
+(defrule validacion-DEK (D)(E)(K) => (assert (C)) (printout t "activado C" crlf))
+(defrule validacion-GKF (G)(K)(F) => (assert (A)) (printout t "activado A" crlf) )

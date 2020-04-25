@@ -1,0 +1,18 @@
+CLIPS> (load "C:/Users/chris/Desktop/UNIVERSIDAD/Sistemas Expertos/validarletra.CLP")
+Defining deffacts: reglas
+Defining defrule: validacion-A +j+j
+Defining defrule: validacion-B +j+j
+Defining defrule: validacion-H +j+j
+Defining defrule: validacion-EG +j+j+j
+Defining defrule: validacion-EK =j+j+j
+Defining defrule: validacion-DEK +j+j+j+j
+Defining defrule: validacion-GKF +j+j+j+j
+TRUE
+CLIPS> (reset)
+CLIPS> (run)
+activado A
+activado E
+activado B
+activado D
+activado C
+CLIPS> 
