@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>Candidatos</NAME>
+	<OUTCOME>Carlos</OUTCOME>
+	<OUTCOME>Juan</OUTCOME>
+	<OUTCOME>Luis</OUTCOME>
+	<PROPERTY>position = (7106.0, 5082.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Bajaran</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7291.0, 5077.0)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>Candidatos</FOR>
+	<TABLE>0.4 0.3 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Bajaran</FOR>
+	<GIVEN>Candidatos</GIVEN>
+	<TABLE>0.05 0.95 0.2 0.8 0.6 0.4</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>

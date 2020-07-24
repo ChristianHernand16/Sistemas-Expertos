@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>maquina</NAME>
+	<OUTCOME>m1</OUTCOME>
+	<OUTCOME>m2</OUTCOME>
+	<OUTCOME>m3</OUTCOME>
+	<PROPERTY>position = (7197.0, 5151.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>azar</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7325.0, 5138.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>No</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7473.0, 5129.0)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>maquina</FOR>
+	<TABLE>0.27 0.43 0.3</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>azar</FOR>
+	<GIVEN>maquina</GIVEN>
+	<TABLE>0.07 0.93 0.05 0.95 0.04 0.96</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>No</FOR>
+	<GIVEN>azar</GIVEN>
+	<TABLE>0.52 0.48 0.43 0.57</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>
